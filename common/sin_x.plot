@@ -1,3 +1,8 @@
+#!/usr/bin/env gnuplot
+
+set term pngcairo
+set output "sin_x.png"
+
 #设置显示标题
 set title "the title is first graphy"
 #横坐标标题
@@ -13,4 +18,4 @@ set xtics ("0" 0, "90" pi/2, "-90" -pi/2, "" pi/4 1, "" -pi/4 1, "" 3*pi/4 1, ""
 #设置背景网格
 set grid
 plot sin(x)
-reset
+set output

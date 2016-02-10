@@ -1,4 +1,4 @@
-#!/usr/local/bin/gnuplot
+#!/usr/bin/env gnuplot
 
 set term gif animate delay 2
 set output "animate.gif"
