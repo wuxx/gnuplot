@@ -1,5 +1,8 @@
 #!/usr/bin/env gnuplot
 
+set term pngcairo
+set output "amplitude_frequency.png"
+
 A(jw) = ({0,1}*jw/({0,1}*jw+p1)) * (1/(1+{0,1}*jw/p2))
 p1 = 10
 p2 = 10000
@@ -21,3 +24,5 @@ set tics out
 set autoscale  y
 set autoscale y2
 plot abs(A(jw)), 180/pi*arg(A(jw)) axes x2y2
+
+set output

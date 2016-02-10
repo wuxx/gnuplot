@@ -1,7 +1,7 @@
-#!/usr/local/bin/gnuplot
+#!/usr/bin/env gnuplot
 
-#set term gif animate delay 100 enhanced
-#set output "cos_polar.gif"
+set term gif animate delay 100 enhanced
+set output "cos_polar.gif"
 
 set term pngcairo
 set output "para.png"

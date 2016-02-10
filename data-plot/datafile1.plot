@@ -1,5 +1,7 @@
+#!/usr/bin/env gnuplot
+
 set terminal png
-set output "output.png"
+set output "output1.png"
 
 set key top left
 set key box
@@ -11,3 +13,4 @@ set yrange [0:0.2]
 set grid
 plot  "datafile1" using 1:2 title "皂甙样品" with linespoints pointtype 5, \
 "datafile1" using 1:3 title '维生素C' with linespoints pointtype  4
+set output

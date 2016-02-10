@@ -1,5 +1,8 @@
 #!/usr/bin/env gnuplot
 
+set terminal png
+set output "output3.png"
+
 #设置x坐标轴数据为时间，这是程序支持的
 set xdata time       # The x axis data is time
 
@@ -21,4 +24,4 @@ set format x "%b %d"    # On the x-axis, we want tics like Jun 10
 set bars 5
 plot ["31-May-04":"11-Jun-04"] 'ibm.dat' using 1:2:3:4:5 with financebars
 
-reset
+set output

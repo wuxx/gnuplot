@@ -1,7 +1,7 @@
-#!/usr/local/bin/gnuplot
+#!/usr/bin/env gnuplot
 
-#set term gif animate delay 2 enhanced
-#set output "animate.gif"
+set term gif animate delay 2 enhanced
+set output "animate.gif"
 
 set term pngcairo
 set output "catenary.png"

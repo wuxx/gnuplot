@@ -1,3 +1,9 @@
+#!/usr/bin/env gnuplot 
+
+set term pngcairo
+set output "exp.png"
+
+
 set key top left
 set key box
 
@@ -40,4 +46,4 @@ plot 1/cos(x)
 unset multiplot
  
 # remove all customization
-reset
+
